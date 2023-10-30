@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Animesh's Portfolio</title>
+    <link rel="short icon" class="favicon" href="logos/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="assets/dp.jpg" class="logimg">
+            <h1>Animesh</h1>
+            <nav class="right-nav">
+                <ul>
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<div class="back">
+    <section id="introduction">
+        <div class="introduction-container">
+            <h2>Welcome to My Portfolio Website</h2>
+            <p>I am delighted to have you here, and I appreciate your interest in exploring my body of work. 
+                <br>This platform serves as a showcase of my skills, creativity, and dedication to my craft. 
+                <br>Please feel free to navigate through the various projects and experiences I've had the privilege to be a part of.
+                <br> Thank you for taking the time to get to know me better through my work.</p>
+                
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="portfolio-container">
+            <div class="main">
+
+                <h1>Welcome To My Work Gallery</h1>
+                <hr>
+                <p class="sub-head">These are some projects on which i have worked upon from my  different fields of interests.</p>
+                
+                <div class="row">
+                  <div class="column">
+                    <div class="content">
+                      <a href="assets/videdit.mp4"><video src="assets/videdit.mp4" alt="introvideo" style="width:100%"></video></a>
+                      <h3>Content Creation</h3>
+                      <p>2-D intro video without using premiere pro or Davinci resolve.</p>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="content">
+                        <a href="assets/Masktask.mp4"><video src="assets/Masktask.mp4" alt="website" style="width:100%"></video></a>
+                      <h3>WebDev Task</h3>
+                      <p>One of the recent selection task of webdev from MASK,althought incomplete but you contact me if you want to view the task.</p>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="content">
+                        <a href="assets/swgtask.mp4">
+                            <video src="assets/swgtask.mp4" alt="website" style="width:100%">
+                        </a>
+                      
+                      <h3>WebDev Task</h3>
+                      <p style="padding-bottom: 30px;">Selection Task by SWG</p>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="content">
+                        <a href="assets/posterv1_page-0001.jpg"><img src="assets/posterv1_page-0001.jpg" alt="Poster" style="width:100%"></a>
+                      <h3>Design and Media </h3>
+                      <p style="padding-bottom: 30px;">Poster made using Adobe Illustrator
+                      </p>
+                    </div>
+                  </div>
+                </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-container">
+            <h2>About Me</h2>
+            <img src="assets/animesh.jpeg" class="mydp">   
+            <p>HI, My name is Animesh. I from Patna, Bihar.
+                Currently, In IIT Kharagpur i am a first year undergraduate student of the department of electrical engineering entolled in its 4 year course in instrumentation engineering.
+                I am part of Tech team in student welfare group, IIT KGP. So, i like to make webpages and interested in open source things. 
+            </p>
+        </div>
+    </section>
+
+    <section id="contact">
+            <div class="contact-container">
+                <div style="text-align:center">
+                  <h2>Contact Me</h2>
+                </div>
+                <div class="row">
+                  <div class="column">
+                    <img src="assets/contact.webp" style="width:100%">
+                  </div>
+                  <div class="column">
+                    <form>
+                      <label for="fname">First Name</label>
+                      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                      <label for="lname">Last Name</label>
+                      <input type="text" id="lname" name="lastname" placeholder="Your last name.."> 
+                      <label for="subject">Subject</label>
+                      <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                      <a href="google.com" target="_blank"><button class="cnt-btn">Submit</button></a>
+                    </form>
+                  </div>
+                </div>
+              </div> 
+        </div>
+    </section>
+
+</div>
+   
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2023 Animesh</p>
+            <div class="social-links">
+                <div class="link-space">
+                  <a href="https://www.linkedin.com/in/animesh-raj-75bb5828b/" target="_blank"><i class="fa fa-linkedin"></i></a> 
+                  <a href="https://github.com/wildcraft958" target="_blank"><i class="fa fa-github" ></i></a>  
+                  <a href="https://www.instagram.com/animate_958/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a>  
+                  <a href="https://www.facebook.com/profile.php?id=100011811482017" target="_blank"><i class="fa fa-facebook"></i></a>
+            </div>
+                </div> 
+        </div>
+    </footer>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+    
+let mybutton = document.getElementById("myBtn");
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+function topFunction() {
+  document.documentElement.scrollTop = 0; 
+}
+    </script>
+</body>
+</html>
